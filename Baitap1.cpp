@@ -1,7 +1,10 @@
 #include<iostream>
 #include<limits>
+#include<cmath>
 using namespace std;
 int UCLN(int a, int b) {
+	a = abs(a);
+	b = abs(b);
 	if (b == 0) return a;
 	return UCLN(b ,a%b);
 }
